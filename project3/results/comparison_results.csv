@@ -1,0 +1,5 @@
+Scenario,Model,Best Params,Train Acc,Test Acc,Test F1 (macro),Test F1 (weighted),CV Acc (mean),CV Acc (std),Overfit Gap (train-test),Tuning Time (s),Predict Time (ms)
+A_with_Height_Weight,Decision Tree,"{'criterion': 'entropy', 'max_depth': 15, 'min_samples_leaf': 1, 'min_samples_split': 2}",1.0,0.9641,0.9631,0.9639,0.9564,0.01,0.0359,21.7,2.1
+A_with_Height_Weight,Random Forest,"{'max_depth': 20, 'max_features': 'sqrt', 'min_samples_leaf': 2, 'n_estimators': 300}",0.9952,0.9522,0.951,0.9527,0.9506,0.0113,0.0431,53.5,345.1
+B_without_Height_Weight,Decision Tree,"{'criterion': 'entropy', 'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 5}",0.9485,0.7512,0.7451,0.7498,0.7657,0.0099,0.1973,20.8,2.1
+B_without_Height_Weight,Random Forest,"{'max_depth': 20, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'n_estimators': 300}",1.0,0.8517,0.8477,0.8512,0.8663,0.0099,0.1483,45.9,400.2
